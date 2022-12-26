@@ -1,0 +1,29 @@
+
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Este es mi template</h1>
+        <h2>familiares</h2>
+            {% for elemento in Familiares%}
+                {% if elemento == 'Miguel Filippetti'%}
+                    <h3 style="color: blue;">{{elemento}}</h3>
+                {% elif elemento == 'Matilde Fagonde'%}
+                    <h3 style="color: blueviolet;">{{elemento}}</h3>
+                {% elif elemento == 'Anto Filippetti' %}
+                    <h3 style="color: coral;">{{elemento}}</h3>
+                {% elif elemento == 'Franco Filippetti'%}
+                    <h3 style="color: green;">{{elemento}}</h3>
+                {% elif elemento == 'Pinitus'%}
+                    <h3 style="color: red;">{{elemento}}</h3>
+                {%endif%}
+            {%endfor%}
+</body>
+</html>
