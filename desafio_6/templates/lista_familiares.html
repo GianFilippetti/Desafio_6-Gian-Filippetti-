@@ -9,9 +9,13 @@
 <body>
     <h1>Hola</h1>
     {% for elemento in familiares %}
-        {{elemento.nombre}}
-        {{elemento.edad}}
-        {{elemento.esta_casado}}
+        {{elemento.nombre}} ,
+        tiene {{elemento.edad}} años y
+            {%if elemento.esta_casado == true%}
+                esta Casado
+            {%else%}
+                esta en pareja
+            {%endif%}
         <p></p>
     {% endfor %}
 </body>
