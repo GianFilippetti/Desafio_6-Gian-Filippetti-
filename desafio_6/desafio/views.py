@@ -4,7 +4,7 @@ from desafio.models import familia
 
 # Create your views here.
 def modelo (request):
-    familia.objects.create (nombre = 'Matilde' , edad= 57 , esta_casado = True)
+    familia.objects.create (nombre = 'Franco' , edad= 33 , esta_casado = False)
     return HttpResponse ('Aca esta armado mi modelo')
 
 def lista_familiares (request):
